@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>WeevilScout</title>
+<link rel="stylesheet" type="text/css" href="yui/build/reset-fonts-grids/reset-fonts-grids.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/resize/assets/skins/sam/resize.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/layout/assets/skins/sam/layout.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/button/assets/skins/sam/button.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/layout/assets/layout-core.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/tabview/assets/skins/sam/tabview.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/container/assets/skins/sam/container.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/treeview/assets/skins/sam/treeview.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/assets/skins/sam/treeview-menu.css" />
+<link rel="stylesheet" type="text/css" href="yui/build/datatable/assets/skins/sam/datatable.css" />
+
+<!--<link rel="stylesheet" type="text/css" href="styles/weevil-style-min.css" />-->
+<link rel="stylesheet" type="text/css" href="styles/weevil-style.css" />
+
+
+<script type="text/javascript">
+var isMobile = function() {
+   //console.log("Navigator: " + navigator.userAgent);
+   return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+ };
+
+if(isMobile()) {
+       window.location.href = "http://elab.lab.uvalight.net/weevilscout/indexm.html";
+}
+</script>
+
+<script type="text/javascript" src="yui/build/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="yui/build/event/event-min.js"></script>
+<script type="text/javascript" src="yui/build/dom/dom-min.js"></script>
+<script type="text/javascript" src="yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="yui/build/element/element-min.js"></script>
+<script type="text/javascript" src="yui/build/dragdrop/dragdrop-min.js"></script>
+<script type="text/javascript" src="yui/build/resize/resize-min.js"></script>
+<script type="text/javascript" src="yui/build/animation/animation-min.js"></script>
+<script type="text/javascript" src="yui/build/layout/layout-min.js"></script>
+<script type="text/javascript" src="yui/build/tabview/tabview-min.js"></script>
+<script type="text/javascript" src="yui/build/treeview/treeview-min.js"></script>
+<script type="text/javascript" src="yui/build/button/button-min.js"></script>
+<script type="text/javascript" src="yui/build/container/container-min.js"></script>
+<script type="text/javascript" src="yui/build/datasource/datasource-min.js"></script>
+<script type="text/javascript" src="yui/build/event-delegate/event-delegate-min.js"></script>
+<script type="text/javascript" src="yui/build/datatable/datatable-min.js"></script>
+
+<script type="text/javascript" src="scripts/browserdetect-min.js"></script>
+<script type="text/javascript" src="edit_area/edit_area_full.js"></script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="scripts/markerclusterer_compiled.js"></script>
+
+<script type="text/javascript" src="scripts/weevil-utils-min.js"></script>
+<script type="text/javascript" src="scripts/weevil-core-min.js"></script>
+<script type="text/javascript" src="scripts/weevil-ui-min.js"></script>
+
+</head>
+
+<body class="yui-skin-sam">
+<div id="wrap" class="yui-skin-sam">
+	<div id="top1">
+		<img border="0" src="images/weevilscout.png"/>
+		<div style="float:right;">
+		<!--<div style="float:right; border:1px; border-style:solid;">-->
+		<!--<table border="1" cellspacing="30" class="metrics">-->
+		<table class="mtable">
+		<tr>
+			<td>Version: </td>
+			<td id="version">0.2b</td>
+		</tr>
+		<tr class="metricstable">
+			<td>Computed Time: </td>
+			<td><div id="dtime">0</div></td>
+			<td>Cluster Size: </td>
+			<td><div id="csize">N.A</div></td>
+		</tr>
+		<tr class="metricstable">
+			<td>State: </td>
+			<td><div id="tstate">Idling</div></td>
+			<td>BogoFlops: </td>
+			<td><div id="flops">N.A</div></td>
+		</tr>
+		</table>
+		</div>
+	</div>
+	<div id="bottom1"><div style="float:right"><br/><a href="mailto:r.s.cushing@uva.nl?Subject=WeevilScout"><p class="answer">Contact</p></a></div></div>
+	<div id="left1"></div>
+	<div id="center1" style="height:100%; background-color:#ffffff"></div>
+</div>
+
+</body>
+</html>

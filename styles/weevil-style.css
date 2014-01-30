@@ -1,0 +1,132 @@
+body {
+	margin:0;
+	padding:0;
+}
+.mtable{
+border-collapse: separate; 
+border-spacing: 5px;
+}
+
+.header {
+font-size:250%;
+font-variant: small-caps;
+}
+.metricstable {
+font-size:200%;
+font-variant: small-caps;
+border-spacing:20px;
+}
+.answer{
+font-size:170%;
+color:#383838;
+font-variant: small-caps;
+}
+#center1 .yui-content{
+	height: 100%;
+	margin: 0px;
+}
+.yui-skin-sam .yui-layout .yui-layout-unit-left .yui-layout-hd {
+     background-color: #c0c0c0;
+     background-image: none;
+}
+.yui-skin-sam .yui-layout .yui-layout-unit-bottom .yui-layout-hd {
+     background-color: #c0c0c0;
+     background-image: none;
+}
+
+.yui-button#joinBtn{
+	width:200px;
+	height:200px;
+	position:absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #004d89;
+	margin: auto .25em; 
+	background: url(images/on.png);
+}
+.googlemap{
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.hidden{
+	visibility:hidden;
+}
+.yui-skin-sam .yui-navset .yui-nav,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav { /* protect nested tabviews from other orientations */
+    /*border:solid #2647a0; /* color between tab list and content */
+    border:solid #717171; /* color between tab list and content */
+    border-width:0 0 5px;
+    Xposition:relative;
+    zoom:1;
+}
+
+.yui-skin-sam .yui-navset .yui-nav li,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav li {
+    margin:0 0.16em 0 0; /* space between tabs */
+    padding:1px 0 0; /* gecko: make room for overflow */
+    zoom:1;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav .selected { 
+    margin:0 0.16em -1px 0; /* for overlap */
+}
+
+.yui-skin-sam .yui-navset .yui-nav a,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a {
+    /*background:#d8d8d8 url(../../../../assets/skins/sam/sprite.png) repeat-x; /* tab background */
+    background:#c0c0c0; 
+    border:solid #a3a3a3;
+    border-width:0 1px;
+    color:#000;
+    text-decoration:none;
+}
+
+.yui-skin-sam .yui-navset .yui-nav a em,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a em {
+    border:solid #a3a3a3;
+    border-width:1px 0 0;
+    cursor:hand;
+    padding:0.25em .75em;
+    left:0; right: 0; bottom: 0; /* protect from other orientations */
+    top:-1px; /* for 1px rounded corners */
+    position:relative;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a,
+.yui-skin-sam .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-skin-sam .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    /*background:#2647a0 url(../../../../assets/skins/sam/sprite.png) repeat-x left -1400px; /* selected tab background */
+    background:#717171;
+    color:#fff;
+}
+
+.yui-skin-sam .yui-navset .yui-nav a:hover,
+.yui-skin-sam .yui-navset .yui-nav a:focus {
+    background:#ffffff; 
+    background:#717171
+    outline:0;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a em {
+    padding:0.35em 0.75em; /* raise selected tab */
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a,
+.yui-skin-sam .yui-navset .yui-nav .selected a em {
+    /*border-color:#243356; /* selected tab border color */
+    border-color:#717171; /* selected tab border color */
+}
+
+.yui-skin-sam .yui-navset .yui-content {
+    background:#edf5ff; /* content background color */
+}
+
+.yui-skin-sam .yui-navset .yui-content,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-content {
+    border:1px solid #808080; /* content border */
+    border-top-color:#243356; /* different border color */
+    padding:0.25em 0.5em; /* content padding */
+}
+
