@@ -1,5 +1,7 @@
-weevilscout Web Browser Distributed Computing
+WeevilScout 
 ===========
+Web Browser Distributed Computing
+-----------
 
 The performance gain being achieved by current JavaScript virtual machines raises the 
 question whether Internet browsers can become the next scientific computing platform. 
