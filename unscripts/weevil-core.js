@@ -39,10 +39,34 @@ function getWeevilList() {
     return xmlStr;
 }
 
+function geolocFail(){
+	success(null);
+}
+
 function joinWeevilNetwork() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success);
-    }
+    //console.log("Before geolocation")
+    try{
+	if (navigator.geolocation) {
+    		var location_timeout = setTimeout("geolocFail()", 10000);
+
+    		navigator.geolocation.getCurrentPosition(function(position) {
+        		clearTimeout(location_timeout);
+			
+			success(position);
+
+    		}, function(error) {
+        		clearTimeout(location_timeout);
+        		geolocFail();
+    		});
+	} else {
+    		// Fallback for no geolocation
+    		geolocFail();
+	}
+	}catch(e){
+		geolocFail()
+	}
+
+    //console.log("After geolocation")
     var worker = new Worker("scripts/grabber.js");
     var paramHash;
     var regxfloat = /^[-+]?\d+(\.\d+){1}$/;
@@ -143,9 +167,14 @@ function enqueueWeevil(weevilStr) {
 }
 
 function success(position) {
-
-    var lat = position.coords.latitude;
-    var log = position.coords.longitude;
+    
+    //console.log("In success geolocation")
+    var lat = -80;
+    var log = 0;
+    if(position != null){
+    	lat = position.coords.latitude;
+    	log = position.coords.longitude;
+    }
     var markers = [];
     var malta = new google.maps.LatLng(35, 14);
     var myOptions = {
