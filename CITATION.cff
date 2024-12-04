@@ -1,0 +1,37 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Distributed Computing on an Ensemble of Browsers
+message: >-
+  If you use this article in your research, please cite it
+  as follows:
+type: software
+authors:
+  - family-names: Cushing
+    given-names: Reginald
+  - family-names: Putra
+    given-names: Ganeshwara Herawan Hananda
+  - family-names: Koulouzis
+    given-names: Spiros
+  - family-names: Belloum
+    given-names: Adam
+  - family-names: Bubak
+    given-names: Marian
+  - family-names: de Laat
+    given-names: Cees
+identifiers:
+  - type: doi
+    value: 10.1109/MIC.2013.3
+    description: Research Paper
+keywords:
+  - Browsers
+  - Internet
+  - Java
+  - Reactive power
+  - Distributed processing
+  - JavaScript
+  - distributed computing
+  - browser computing
+  - volunteer computing
+license: Apache-2.0
